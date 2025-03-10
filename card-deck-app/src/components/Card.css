@@ -1,0 +1,40 @@
+/* Card container */
+.card {
+    width: 100px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border: 2px solid #000; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 10px; /* Space between cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+  
+  /* Card value (e.g., A, 2, 3, ..., K) */
+  .card-value {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the value bold */
+  }
+  
+  /* Card suit (e.g., ♥, ♦, ♣, ♠) */
+  .card-suit {
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+  
+  /* Highlighted card (when picked) */
+  .card.picked {
+    border: 3px solid gold; /* Highlight border */
+    box-shadow: 0 0 10px gold; /* Add a glowing effect */
+  }
